@@ -22,6 +22,17 @@ const Modual = () => {
                 e.target.reset(); 
             })
     }
+   /*  const handleKeypress = e => {
+        //it triggers by pressing the enter key
+      if (e.keyCode === 13) {
+        handealTask();
+      }
+    }; */
+    const onclickkey =e=>{
+        if (e.keyCode === 13) {
+            handealTask();
+          }
+    }
     return (
         <div>
 
@@ -32,13 +43,9 @@ const Modual = () => {
             <div class="modal">
                 <div class="modal-box relative">
                     <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                    <h3 class="text-lg font-bold">Add Task!</h3>
                     <form onSubmit={handealTask} className='login-form'>
-                        <textarea name="task" id="" cols="40" className='text-area' rows="3"></textarea>
-
-                        <div>
-                            <input type="submit" value="Add" />
-                        </div>
+                        <input type="text" name="task" id="" className='text-area' />
                     </form>
                 </div>
             </div>

@@ -3,12 +3,8 @@ import Modual from './Modual';
 
 const ToDo = () => {
     return (
-        <div className='mt-10'>
-            <h1>Task</h1>
-            <h1>Task</h1>
-            <h1>Task</h1>
-            <h1>Task</h1>
-            <h1>Task</h1>
+        <div className='mt-60'>
+            
             <div className='text-center'>
                 <Modual />
             </div>
