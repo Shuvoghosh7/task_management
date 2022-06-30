@@ -1,10 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Component/Share/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import ToDo from './Component/To-Do/ToDo';
+
 
 function App() {
   return (
     <div>
-      <h1 className='text-red-600'>Hello </h1>
+      <Navbar>
+        <Routes>
+          <Route path='/' element={<ToDo/>}/>
+        </Routes>
+      </Navbar>
     </div>
   );
 }
