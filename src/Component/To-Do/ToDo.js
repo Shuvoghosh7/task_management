@@ -1,4 +1,5 @@
 import React from 'react';
+import Modual from './Modual';
 
 const ToDo = () => {
     return (
@@ -8,7 +9,9 @@ const ToDo = () => {
             <h1>Task</h1>
             <h1>Task</h1>
             <h1>Task</h1>
-           
+            <div className='text-center'>
+                <Modual />
+            </div>
         </div>
     );
 };
