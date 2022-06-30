@@ -6,7 +6,7 @@ const Modual = () => {
     const handealTask = (e) => {
         e.preventDefault();
         const task = e.target.task.value
-        console.log(task)
+    
         e.target.reset();
         fetch("http://localhost:5000/add-task", {
             method: "POST",
@@ -22,12 +22,7 @@ const Modual = () => {
                 e.target.reset(); 
             })
     }
-   /*  const handleKeypress = e => {
-        //it triggers by pressing the enter key
-      if (e.keyCode === 13) {
-        handealTask();
-      }
-    }; */
+   
     const onclickkey =e=>{
         if (e.keyCode === 13) {
             handealTask();

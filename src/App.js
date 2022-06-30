@@ -7,6 +7,7 @@ import Home from './Component/Home/Home';
 import ToDo from './Component/To-Do/ToDo';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import UpdateTask from './Component/UpdateTask/UpdateTask';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/ToDo' element={<ToDo/>}/>
+          <Route path='/update/:id' element={<UpdateTask/>}/>
         </Routes>
         <ToastContainer />
       </Navbar>
