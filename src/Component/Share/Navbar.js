@@ -18,7 +18,8 @@ const Navbar = ({ children }) => {
                     <div class="flex-auto hidden lg:block ">
                         <div className='flex justify-center'>
                             <ul class="menu menu-horizontal gap-x-2 ">
-                                <li><Link to='/' className='rounded-lg'>TO-DO</Link></li>
+                                <li><Link to='/' className='rounded-lg'>Home</Link></li>
+                                <li><Link to='/ToDo' className='rounded-lg'>TO-DO</Link></li>
                                 <li><Link to='/CompletedTasks' className='rounded-lg'>Completed Tasks</Link></li>
                                 <li><Link to='/Calendar' className='rounded-lg'> Calendar</Link></li>
                             </ul>
@@ -31,7 +32,7 @@ const Navbar = ({ children }) => {
                 <label for="my-drawer-3" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-56 bg-black text-white text-xl">
 
-                    <li><Link to='/' className='rounded-lg'>TO-DO</Link></li>
+                    <li><Link to='/ToDo' className='rounded-lg'>TO-DO</Link></li>
                     <li><Link to='/about' className='rounded-lg'>Completed Tasks</Link></li>
                     <li><Link to='/Calendar' className='rounded-lg'> Calendar</Link></li>
                 </ul>
