@@ -12,7 +12,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 const Footer = () => {
     return (
         <div className='bg-slate-600 text-white mt-40 p-8 gap-4'>
-            <div className='lg:flex justify-around'>
+            <div className='lg:flex md:flex justify-around'>
                 <div>
                     <h1 className='text-5xl mt-12 text-center'> CONTUCT</h1>
                     <div className='flex justify-center '>

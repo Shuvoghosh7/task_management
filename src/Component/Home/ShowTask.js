@@ -3,7 +3,7 @@ import './ShowTask.css'
 import { GrUpdate } from 'react-icons/gr';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import oksing from '../../img/sing1.png'
+import Fade from 'react-reveal/Fade';
 const ShowTask = ({ info, refetch }) => {
     const [isSubscribed, setIsSubscribed] = useState(false);
     const { task, _id } = info
@@ -41,16 +41,20 @@ const ShowTask = ({ info, refetch }) => {
         
     }
     return (
+        
         <div className='card'>
             <div className='flex justify-center gap-4'>
+            <Fade right>
                 <div onClick={handealDelete}>
                     <input onClick={completeTask}  type="checkbox" name="" id="" /> 
                 </div>
-
+                
                 <h1 className='mr-5'>{task}</h1>
+                </Fade>
             </div>
             <span onClick={() => taskupdate(_id)}>< GrUpdate /></span>
         </div>
+       
     );
 };
 
