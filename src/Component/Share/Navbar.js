@@ -21,7 +21,7 @@ const Navbar = ({ children }) => {
                                 <li><Link to='/' className='rounded-lg'>Home</Link></li>
                                 <li><Link to='/ToDo' className='rounded-lg'>TO-DO</Link></li>
                                 <li><Link to='/CompletedTasks' className='rounded-lg'>Completed Tasks</Link></li>
-                                <li><Link to='/Calendar' className='rounded-lg'> Calendar</Link></li>
+                                <li><Link to='/calendar' className='rounded-lg'> Calendar</Link></li>
                             </ul>
                         </div>
                     </div>
