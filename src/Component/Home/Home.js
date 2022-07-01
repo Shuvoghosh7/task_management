@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import ShowTask from './ShowTask';
 const Home = () => {
   const { data: taskinfo, isLoading, refetch } = useQuery('taskinfo', () => fetch('https://evening-eyrie-20903.herokuapp.com/task').then(res => res.json()))
-  
+
   if (isLoading) {
     return (
         <div className='h-screen flex justify-center items-center'>
@@ -14,7 +14,7 @@ const Home = () => {
 }
   return (
     <div className='mt-20 mx-10'>
-
+      <h1 className='text-red-500 text-3xl text-center mb-3 font-bold'>INCOMPLETE TASK</h1>
       <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
         {
           taskinfo?.map(info => <ShowTask
