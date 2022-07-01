@@ -6,8 +6,7 @@
     box-sizing: border-box;
     border-radius: 60px;
     background: linear-gradient(145deg, #989898, #b5b5b5);
-    box-shadow: 35px 35px 70px #656565,
-        -35px -35px 70px #ededed;
+    
 }
 .login-container input,
 .login-container button {

@@ -6,7 +6,7 @@ const Navbar = ({ children }) => {
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content flex flex-col">
 
-                <div class="w-full navbar bg-neutral fixed top-0 z-50 lg:px-20 text-white">
+                <div class="w-full navbar bg-slate-500 fixed top-0 z-50 lg:px-20 text-white font-bold text-xl">
 
 
                     <div class="flex-none lg:hidden">
@@ -30,10 +30,10 @@ const Navbar = ({ children }) => {
             </div>
             <div class="drawer-side">
                 <label for="my-drawer-3" class="drawer-overlay"></label>
-                <ul class="menu p-4 overflow-y-auto w-56 bg-black text-white text-xl">
-
+                <ul class="menu p-4 overflow-y-auto w-56 bg-slate-400 font-bold text-slate-900 text-xl">
+                    <li><Link to='/' className='rounded-lg'>Home</Link></li>
                     <li><Link to='/ToDo' className='rounded-lg'>TO-DO</Link></li>
-                    <li><Link to='/about' className='rounded-lg'>Completed Tasks</Link></li>
+                    <li><Link to='/CompletedTasks' className='rounded-lg'>Completed Tasks</Link></li>
                     <li><Link to='/Calendar' className='rounded-lg'> Calendar</Link></li>
                 </ul>
             </div>

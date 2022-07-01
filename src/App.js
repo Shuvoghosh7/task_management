@@ -16,7 +16,7 @@ import Footer from './Component/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='bg-slate-800'>
       <Navbar>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -26,8 +26,8 @@ function App() {
           <Route path='CompletedTasks' element={<CompleteTask/>}/>
         </Routes>
         <ToastContainer />
+        <Footer/>
       </Navbar>
-      <Footer/>
     </div>
   );
 }
