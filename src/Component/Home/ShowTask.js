@@ -14,7 +14,7 @@ const ShowTask = ({ info, refetch }) => {
 
     const completeTask = e => {
 
-        fetch("http://localhost:5000/complete-task", {
+        fetch("https://evening-eyrie-20903.herokuapp.com/complete-task", {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -25,19 +25,28 @@ const ShowTask = ({ info, refetch }) => {
             .then(data => {
                 console.log(data)
                 toast.success("Complete Task Sucessfully")
-               
+
             })
-        setIsSubscribed(current => !current);      
+        
+    }
+    const handealDelete = () => {
+            const url = `https://evening-eyrie-20903.herokuapp.com/detete-task/${_id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    refetch()
+                })
+        
     }
     return (
         <div className='card'>
             <div className='flex justify-center gap-4'>
-
-                <div>
-                   { !isSubscribed?<input onClick={completeTask} type="checkbox" name="" id="" />: <img className='w-15 h-8 mr-5' src={oksing} alt="" />
-                   } 
+                <div onClick={handealDelete}>
+                    <input onClick={completeTask}  type="checkbox" name="" id="" /> 
                 </div>
-                    
+
                 <h1 className='mr-5'>{task}</h1>
             </div>
             <span onClick={() => taskupdate(_id)}>< GrUpdate /></span>

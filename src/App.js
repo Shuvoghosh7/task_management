@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import UpdateTask from './Component/UpdateTask/UpdateTask';
 import CalendarForDate from './Component/Calendar/CalendarForDate';
 import CompleteTask from './Component/CompleteTask/CompleteTask';
+import Footer from './Component/Footer/Footer';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         </Routes>
         <ToastContainer />
       </Navbar>
+      <Footer/>
     </div>
   );
 }

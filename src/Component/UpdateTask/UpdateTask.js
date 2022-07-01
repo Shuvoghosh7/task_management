@@ -7,7 +7,7 @@ const UpdateTask = () => {
     console.log(update)
     const { id } = useParams()
     useEffect(() => {
-        fetch(`http://localhost:5000/get-task/${id}`)
+        fetch(`https://evening-eyrie-20903.herokuapp.com/get-task/${id}`)
             .then(res => res.json())
             .then(data => setUpdate(data))
     }, [])
@@ -15,7 +15,7 @@ const UpdateTask = () => {
         e.preventDefault();
         const task = e.target.task.value
 
-        fetch(`http://localhost:5000/update-task/${update._id}`, {
+        fetch(`https://evening-eyrie-20903.herokuapp.com/update-task/${update._id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json',

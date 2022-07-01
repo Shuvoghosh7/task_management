@@ -6,7 +6,7 @@ const ToDo = () => {
         e.preventDefault();
         const task = e.target.task.value
         e.target.reset();
-        fetch("http://localhost:5000/add-task", {
+        fetch("https://evening-eyrie-20903.herokuapp.com/add-task", {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
